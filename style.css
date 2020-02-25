@@ -34,10 +34,6 @@ body {
     font-size: xx-small;
 }
 
-.container3 {
-
-}
-
 .container4 {
     line-height: 20vmax;
     background-size: 50%;
@@ -60,14 +56,6 @@ body {
 
 .container6 {
     line-height: 30vmax;
-}
-
-.container8 {
-
-}
-
-.container9 {
-
 }
 
 #title, #a1, #a2, #a3, #about, #contact, #terms, #privacy {
