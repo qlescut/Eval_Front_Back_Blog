@@ -1,0 +1,183 @@
+body {
+    width: 99%;
+    font-family: Arial;
+    color: black;
+    font-size: medium;
+}
+
+.container1, .container3, .container4, .container4b, .container5, .container6, .container8, .container9 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.container1, .container5, .container6, .container9 {
+    justify-content: center;
+}
+
+.container3, .container4, .container4b, .container8 {
+    justify-content: space-between;
+    margin-left: 1vmax;
+    margin-right: 1vmax;
+}
+
+.container1, .container2, .container3, .container4, .container5, .container6, .container7, .container8, .container9 {
+    margin-top: 1vmax;
+}
+
+.container1 {
+    font-weight: bold;
+}
+
+.container2, .container7 {
+    background: black;
+    font-size: xx-small;
+}
+
+.container3 {
+
+}
+
+.container4 {
+    line-height: 20vmax;
+    background-size: 50%;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.container4b {
+    margin-bottom: 1vmax;
+    color: black;
+    text-align: center;
+    font-size: large;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.container5 {
+    line-height: 10vmax;
+}
+
+.container6 {
+    line-height: 30vmax;
+}
+
+.container8 {
+
+}
+
+.container9 {
+
+}
+
+#title, #a1, #a2, #a3, #about, #contact, #terms, #privacy {
+    text-decoration: none;
+    color: black;
+}
+
+#a1, #a2, #a3, #p1, #p2, #p3, #p4, #p5, #p6, #p7, #p8, #p9, #p10, #p11, #p12 {
+    color: transparent;
+    background-size: 100%;
+}
+
+#a1, #a2, #a3, #p1, #p2, #p3, #p4, #p5, #p6, #p7, #p8, #p9, #p10, #p11, #p12, #player, #text, #tchat {
+    border: black 1px solid;
+}
+
+#a1, #a2, #a3 {
+    width: 32.75%;
+}
+
+#p1, #p2, #p3, #p4, #p5, #p6, #p7, #p8, #p9, #p10, #p11, #p12 {
+    width: 20%;
+}
+
+#title {
+    font-size: xx-large;
+}
+
+#sr1, #sr2, #sr3, #sr4 {
+    flex-grow: 1;
+    align-self: center;
+    color: black;
+}
+
+#search, #bsearch, #log {
+    flex-grow: 0;
+    align-self: center;
+}
+
+#space1 {
+    flex-grow: 14;
+    color: transparent;
+}
+
+#space2 {
+    flex-grow: 4;
+    color: transparent;
+}
+
+#a1 {
+    background-image: url("./pictures/a1.jpg");
+}
+
+#a2 {
+    background-image: url("./pictures/a2.jpg");
+}
+
+#a3 {
+    background-image: url("./pictures/a3.jpg");
+}
+
+#p1 {
+    background-image: url("./pictures/p1.jpg");
+}
+
+#p2 {
+    background-image: url("./pictures/p2.jpg");
+}
+
+#p3 {
+    background-image: url("./pictures/p3.jpg");
+}
+
+#p4 {
+    background-image: url("./pictures/p4.jpg");
+}
+
+#p5 {
+    background-image: url("./pictures/p5.jpg");
+}
+
+#p6 {
+    background-image: url("./pictures/p6.jpg");
+}
+
+#p7 {
+    background-image: url("./pictures/p7.jpg");
+}
+
+#p8 {
+    background-image: url("./pictures/p8.jpg");
+}
+
+#p9 {
+    background-image: url("./pictures/p9.jpg");
+}
+
+#p10 {
+    background-image: url("./pictures/p10.jpg");
+}
+
+#p11 {
+    background-image: url("./pictures/p11.jpg");
+}
+
+#p12 {
+    background-image: url("./pictures/p12.jpg");
+}
+
+#player, #tchat {
+    width: 80.4%;
+    height: 20vmax;
+}
