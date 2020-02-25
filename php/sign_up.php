@@ -105,17 +105,17 @@ if ($form) {
             <h1>Sign up</h1><br/>
             <div class="center">
                 <label for="username">Username </label><input type="text" name="username"
-                                                                      value="<?php if (isset($_POST['username'])) {
-                                                                          echo htmlentities($_POST['username'], ENT_QUOTES, 'UTF-8');
-                                                                      } ?>"/><br/><br/>
+                                                              value="<?php if (isset($_POST['username'])) {
+                                                                  echo htmlentities($_POST['username'], ENT_QUOTES, 'UTF-8');
+                                                              } ?>"/><br/><br/>
                 <label for="password">Password (6 letters min.) </span></label><input
                         type="password" name="password"/><br/><br/>
                 <label for="passverif">Verification password </span></label><input
                         type="password" name="passverif"/><br/><br/>
                 <label for="email">Email </label><input type="text" name="email"
-                                                       value="<?php if (isset($_POST['email'])) {
-                                                           echo htmlentities($_POST['email'], ENT_QUOTES, 'UTF-8');
-                                                       } ?>"/><br/><br/>
+                                                        value="<?php if (isset($_POST['email'])) {
+                                                            echo htmlentities($_POST['email'], ENT_QUOTES, 'UTF-8');
+                                                        } ?>"/><br/><br/>
                 <input type="submit" value="Send"/>
             </div>
         </form>

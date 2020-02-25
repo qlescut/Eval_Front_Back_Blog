@@ -81,9 +81,9 @@ if (isset($_SESSION['username'])) {
                 <h1>Log in</h1><br/>
                 <div class="center">
                     <label for="username">Username</label><input type="text" name="username" id="username"
-                                                                          value="<?php echo htmlentities($ousername, ENT_QUOTES, 'UTF-8'); ?>"/><br/><br/>
+                                                                 value="<?php echo htmlentities($ousername, ENT_QUOTES, 'UTF-8'); ?>"/><br/><br/>
                     <label for="password">Password</label><input type="password" name="password"
-                                                                     id="password"/><br/><br/>
+                                                                 id="password"/><br/><br/>
                     <input type="submit" value="Send"/>
                 </div>
             </form>
