@@ -34,7 +34,7 @@ include('config.php');
     } else if (!isset($_SESSION['username'])) {
         ?>
         <a href="connexion.php">
-            <button id="log">Sign In</button>
+            <button id="log">Log In</button>
         </a>
         <a href="connexion.php"></a>
         <?php
@@ -69,9 +69,8 @@ if (isset($_POST['username'], $_POST['password'], $_POST['passverif'], $_POST['e
                     if ($mysqli->query('insert into users(id, username, password, email) values (' . $id . ', "' . $username . '", "' . $password . '", "' . $email . '")')) {
                         $form = false;
                         ?>
-                        <div class="message">Vous avez bien &eacute;t&eacute; inscrit. Vous pouvez dor&eacute;navant
-                            vous connecter.<br/>
-                            <a href="connexion.php">Se connecter</a></div>
+                        <div class="message">You are registered.<br/>
+                            <a href="connexion.php">Log in</a></div>
                         <?php
                     } else {
                         $form = true;
@@ -103,21 +102,21 @@ if ($form) {
     ?>
     <div class="content">
         <form action="sign_up.php" method="post">
-            <h1>Inscription</h1><br/>
+            <h1>Sign up</h1><br/>
             <div class="center">
-                <label for="username">Nom d'utilisateur</label><input type="text" name="username"
+                <label for="username">Username </label><input type="text" name="username"
                                                                       value="<?php if (isset($_POST['username'])) {
                                                                           echo htmlentities($_POST['username'], ENT_QUOTES, 'UTF-8');
                                                                       } ?>"/><br/><br/>
-                <label for="password">Mot de passe<span class="small">(6 caract&egrave;res min.)</span></label><input
+                <label for="password">Password (6 letters min.) </span></label><input
                         type="password" name="password"/><br/><br/>
-                <label for="passverif">Mot de passe<span class="small">(v&eacute;rification)</span></label><input
+                <label for="passverif">Verification password </span></label><input
                         type="password" name="passverif"/><br/><br/>
-                <label for="email">Email</label><input type="text" name="email"
+                <label for="email">Email </label><input type="text" name="email"
                                                        value="<?php if (isset($_POST['email'])) {
                                                            echo htmlentities($_POST['email'], ENT_QUOTES, 'UTF-8');
                                                        } ?>"/><br/><br/>
-                <input type="submit" value="Envoyer"/>
+                <input type="submit" value="Send"/>
             </div>
         </form>
     </div>

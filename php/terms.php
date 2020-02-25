@@ -34,7 +34,7 @@ include('config.php')
     } else if (!isset($_SESSION['username'])) {
         ?>
         <a href="connexion.php">
-            <button id="log">Sign In</button>
+            <button id="log">Log In</button>
         </a>
         <a href="connexion.php"></a>
         <?php

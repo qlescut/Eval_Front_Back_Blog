@@ -34,7 +34,7 @@ include('config.php')
     } else if (!isset($_SESSION['username'])) {
         ?>
         <a href="connexion.php">
-            <button id="log">Sign In</button>
+            <button id="log">Log In</button>
         </a>
         <a href="connexion.php"></a>
         <?php
@@ -78,7 +78,7 @@ include('config.php')
 </div>
 
 <div class="container6">
-    <iframe id="player" src="https://www.youtube.com/embed/mxvEjC28MJ8" frameborder="0"
+    <iframe id="player" src="https://www.youtube.com/embed/pRG__yFg-zM" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 

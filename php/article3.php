@@ -34,7 +34,7 @@ include('config.php')
     } else if (!isset($_SESSION['username'])) {
         ?>
         <a href="connexion.php">
-            <button id="log">Sign In</button>
+            <button id="log">Log In</button>
         </a>
         <a href="connexion.php"></a>
         <?php
@@ -99,14 +99,12 @@ include('config.php')
         quelili bi, rad de comimeta, by ha mylifub rimimufiquu vipo dumed. Myfil, bysemim jolyla, quid, nu milab
         felivepi ba loebalis levudo dyl leda ci. Jesoelili vo tar mu metih bahe bel line nynace mabi lah mireme. Deselud
         lobyl bahybileb boe silihadi did mare, recoe tememem loc bot mehed bilen sefec mebumo.
-
     </div>
 </div>
 
 <div class="container6">
-    <div id="tchat">zone commentaires</div>
+    <div id="tchat">espace commentaires</div>
 </div>
-
 
 <div class="container7">
     <div>space</div>

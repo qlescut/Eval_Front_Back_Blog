@@ -10,6 +10,7 @@ include('config.php');
     <script src="https://kit.fontawesome.com/f3b1ef72aa.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
 <div class="container1">
     <a href="index.php" id="title">TITLE</a>
 </div>
@@ -31,16 +32,9 @@ include('config.php');
             <button id="log">Log Out</button>
         </a>
         <?php
-    } else if (!isset($_SESSION['username'])) {
-        ?>
-        <a href="connexion.php">
-            <button id="log">Sign In</button>
-        </a>
-        <a href="connexion.php"></a>
-        <?php
     } else {
         ?>
-        <a href="sign_up.php">(
+        <a href="sign_up.php">
             <button id="log">Sign Up</button>
         </a>
         <a href="connexion.php"></a>
@@ -52,7 +46,7 @@ include('config.php');
 if (isset($_SESSION['username'])) {
     unset($_SESSION['username'], $_SESSION['userid']);
     ?>
-    <div class="message">Vous avez bien &eacute;t&eacute; d&eacute;connect&eacute;.<br/>
+    <div class="message">You logged off.<br/>
         <a href="<?php echo $url_home; ?>">Homepage</a></div>
     <?php
 } else {
@@ -67,13 +61,12 @@ if (isset($_SESSION['username'])) {
             $_SESSION['username'] = $_POST['username'];
             $_SESSION['userid'] = $dn['id'];
             ?>
-            <div class="message">Vous avez bien &eacute;t&eacute; connect&eacute;. Vous pouvez acc&eacute;der &agrave;
-                votre espace membre.<br/>
-                <a href="<?php echo $url_home; ?>">Accueil</a></div>
+            <div class="message">You logged in.<br/>
+                <a href="<?php echo $url_home; ?>">Homepage</a></div>
             <?php
         } else {
             $form = true;
-            $message = 'La combinaison que vous avez entr&eacute; n\'est pas bonne.';
+            $message = 'You failed.';
         }
     } else {
         $form = true;
@@ -85,13 +78,13 @@ if (isset($_SESSION['username'])) {
         ?>
         <div class="content">
             <form action="connexion.php" method="post">
-                <h1>Connexion</h1><br/>
+                <h1>Log in</h1><br/>
                 <div class="center">
-                    <label for="username">Nom d'utilisateur</label><input type="text" name="username" id="username"
+                    <label for="username">Username</label><input type="text" name="username" id="username"
                                                                           value="<?php echo htmlentities($ousername, ENT_QUOTES, 'UTF-8'); ?>"/><br/><br/>
-                    <label for="password">Mot de passe</label><input type="password" name="password"
+                    <label for="password">Password</label><input type="password" name="password"
                                                                      id="password"/><br/><br/>
-                    <input type="submit" value="Connection"/>
+                    <input type="submit" value="Send"/>
                 </div>
             </form>
         </div>
@@ -100,6 +93,7 @@ if (isset($_SESSION['username'])) {
 }
 ?>
 <body>
+
 <div class="container7">
     <div>space</div>
 </div>
