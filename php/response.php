@@ -1,5 +1,6 @@
 <?php
 include('config.php');
+include_once('article1.php');
 if (isset ($_POST['send']) && $_POST['send'] == 'Post') {
     $username = $mysqli->real_escape_string($_POST['username']);
     $message = $mysqli->real_escape_string($_POST['message']);
@@ -36,5 +37,13 @@ if (isset ($_POST['send']) && $_POST['send'] == 'Post') {
     <br>
     <?php
     if (isset($_POST['message'])) echo($_POST['message']);
+
+    $mysqli->select_db("blog");
+    $list = "select * from tchat where 1";
+    $result = $mysqli->query($list);
+
+    while ($row = $result->fetch_assoc()){
+    }
     ?>
+    <div><?= $row['message'] ?></div>
 </div>
