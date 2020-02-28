@@ -53,13 +53,13 @@ include('config.php')
 
 <div class="container4">
     <a href="article1.php" id="a1">.</a>
-    <a href="article2.php" id="a2">.</a>
-    <a href="article3.php" id="a3">.</a>
+    <a id="a2">.</a>
+    <a id="a3">.</a>
 </div>
 <div class="container4b">
     <a href="article1.php">Article 1</a>
-    <a href="article2.php">Article 2</a>
-    <a href="article3.php">Article 3</a>
+    <a>Article 2</a>
+    <a>Article 3</a>
 </div>
 
 <div class="container5">
