@@ -103,9 +103,12 @@ include('config.php')
 </div>
 
 <div class="container6">
-    <div id="tchat">espace commentaires</div>
+    <div id="tchat">
+        <?php
+        include_once ('response.php');
+        ?>
+    </div>
 </div>
-
 
 <div class="container7">
     <div>space</div>
